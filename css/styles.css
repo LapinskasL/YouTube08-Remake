@@ -1,0 +1,147 @@
+main {
+	font-family: calibri, helvetica, Arial;
+}
+
+#wrapper {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header, nav, footer {
+	font-family: calibri, helvetica, Arial;
+}
+
+h1,h2,h3,h4,h5,h6, ul {
+	font-family: calibri, helvetica, Arial;
+}
+
+/* HEADER STYLES */
+h1 {
+	float: left;
+	margin: 0;
+}
+
+#topNavigation ul li:first-of-type {
+	font-weight: bold;
+}
+#topNavigation ul {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: right;
+}
+#topNavigation ul li {
+	display: inline-block;	
+	border-right: 1px solid #a8a8a8;
+	padding: 0 5px 0 3px;
+	font-size: 11pt;
+}
+#topNavigation ul li:last-child {
+	border-right: 0;
+}
+#topNavigation ul li:nth-of-type(4) a,
+#topNavigation ul li:nth-of-type(5) a {
+	text-decoration-style: dotted;
+}
+/* END HEADER STYES */
+
+
+/* NAV STYLES */
+
+#navigationButtons {
+	position: relative;
+	right: 60px;
+	text-align: center;
+}
+#navigationButtons ul {
+	list-style-type: none;
+	margin: 30px 0 0 0;
+}
+#navigationButtons ul li {
+	display: inline;
+	font-size: 13pt;
+}
+#navigationButtons a {
+	color: #003399;
+	text-decoration: none;
+	padding: 2px 0 3px 0;
+	display: inline-block;
+	width: 125px;
+	font-weight: bold;
+	background: linear-gradient(#fbfcff, #bbc7e6);
+	border-top: 1px solid #c3d0ec;
+	border-right: 1px solid #c3d0ec;
+	border-left: 1px solid #c3d0ec;
+	border-radius: 5px 5px 0 0;
+}
+
+#searchBar {
+	width: 900px;
+	background: linear-gradient(#d5d5d5, #e7e7e7);
+	padding: 9px 0 9px 0;
+	border-radius: 6px;
+}
+#searchBar form {
+	float: left;
+	position: relative;
+	left: 250px;
+	margin-left: auto;
+}
+#uploadButton {
+	text-align: right;
+	margin-right: 5px;
+}
+#uploadButton a {
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 4px 10px 4px 10px;
+	color: brown;
+	border: 1px solid #ffbf00;
+	border-radius: 4px;
+	background: linear-gradient(#fffbb7, #fed81c);
+}
+#uploadButton a:hover {
+	background: linear-gradient(white, #fed81c);
+	text-decoration: underline;
+}
+/* END NAV STYES */
+
+/* MAIN STYLES */
+/* main styles are in separate css files */
+/* MAIN STYLES */
+
+
+/* style TOOLS (like clearing float) */
+.clearLeft {
+	clear: left;
+}
+/* end of style TOOLS */
+
+
+/* FOOTER STYLES */
+
+#bottomSearchBar {
+	width: 900px;
+	background-color: #eeeeee;
+	padding: 15px 0 15px 0;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 20px;
+}
+
+#bottomSearchBar form {
+	float: left;
+	position: relative;
+	left: 250px;
+	margin-left: auto;
+}
+
+h6 {
+	text-align: center;
+	font-size: 9pt;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	font-weight: normal;
+}
+/* END FOOTER STYLES */

@@ -1,0 +1,274 @@
+main {
+	height: 1560px;
+}
+
+#videosWatchedNow {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 530px;
+}
+#videosWatchedNow h4 {
+	margin-bottom: 5px;
+}
+#videosWatchedNow img {
+	transition: 1s;
+	animation: fade-in-from-above 1s;
+}
+
+@keyframes fade-in-from-above {
+    from {
+		transform: translate(0px, -20px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#videosWatchedNow .videoThumb {
+	float: left;
+	margin: 0 3px 5px 0;
+	width: 102px;
+	height: 68px;
+}
+#videosWatchedNow img:hover {
+	transform: translate(0px, -10px);
+	transition: .3s;
+}
+
+
+#featuredVids {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 530px;
+}
+#featuredVids h2 {
+	margin-bottom: 3px;
+}
+#featuredVidsBar {
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 24px;
+}
+#featuredVidsBar ul a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 9pt;
+	border-right: 1px solid #cccccc;
+	padding: 0 6px 0 2px;
+}
+#featuredVidsBar ul {
+	margin: 0 0 0 185px;
+}
+#featuredVidsBar li {
+	list-style-type: none;
+	display: inline-block;
+}
+#featuredVidsBar ul li:last-of-type a {
+	border-right: 0;
+}
+
+
+
+#featuredVidList {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 530px;
+}
+#featuredVidList .featuredVid{
+	width: 530px;
+	padding-bottom: 12px;
+	margin-top: 12px;
+	border-bottom: 1px solid #cccccc;
+}
+#featuredVidList .featuredVidDescr{
+	float: left;
+	width: 280px;
+	margin: 0 5px 0 5px ;
+}
+#featuredVidList .featuredVidDescr h3 a{
+	text-decoration: none;
+}
+#featuredVidList .featuredVidDescr h3{
+	font-size: 13pt;
+	margin: 0;
+}
+#featuredVidList .featuredVidDescr p{
+	float: left;
+	font-size: 11pt;
+	margin: 5px 0 0 0;
+}
+#featuredVidList .featuredVid {
+	height: 85px;
+}
+#featuredVidList .featuredVid .fvideoThumb {
+	padding: 1px;
+	border: 1px solid #a8a8a8;
+	width: 120px;
+	height: 72px;
+	float: left;
+}
+#featuredVidList .featuredVid .quickListAddGray {
+	position: relative;
+	top: 57px;
+	right: 428px;
+}
+#featuredVidList .featuredVid .quickListAddGreen {
+	position: relative;
+	top: 57px;
+	right: 410px;
+}
+#featuredVidList .featuredVid .quickListAddGray:hover {
+	opacity: 0;
+	transition: .1s;
+}
+#featuredVidList .featuredVid .inQuickList {
+	position: relative;
+	width: 97px;
+	right: 420px;
+	top: 50px;
+	height: 20px;
+	background-color: rgba(65, 168, 13, 0.6);
+}
+#featuredVidList .featuredVid .inQuickList a {
+	color: black;
+	font-size: 11pt;
+	padding-left: 14px;
+	font-weight: bold;
+}
+#featuredVidList .featuredVid .featuredVidMisc {
+	width: 110px;
+	font-size: 10pt;
+	border-left: 1px solid #a8a8a8;
+	display: inline-block;
+	position: relative;
+	bottom: 20px;
+	padding-left: 5px;
+	margin-top: 1px;
+	
+}
+#featuredVidList #moreFeatured {
+	position: relative;
+	top: 15px;
+	left: 340px;
+	font-weight: bold;
+}
+
+
+#logInForm {
+	position: relative;
+	left: 598px;
+	bottom: 1470px;
+	width: 300px;
+	height: 150px;
+	border: 1px solid #cccccc;
+} 
+#logInForm h4 {
+	margin: 3px 0 0 0;
+	padding-left: 5px;
+	float: left;
+}
+#logInForm #signHelp {
+	margin: 3px 0 0 0;
+	padding-left: 215px;
+	height: 22px;
+	font-size: 10pt;
+}
+#logInForm #pass {
+	padding-left: 4px;
+}
+#logInForm #pass,
+#logInForm #user {
+	font-size: 9pt;
+	font-weight: bold;
+	margin-left: 32px;
+}
+#logInForm input[type=password] {
+	margin: 3px 0 2px 0;
+	height: 13px;
+}
+#logInForm input[type=text] {
+	height: 13px;
+}
+#logInForm input[type=button] {
+	margin-left: 90px;
+	font-size: 8pt;
+	
+}
+#logInForm #forgotUserPass {
+	margin: 10px 0 0 50px;
+	font-size: 10pt;
+}
+#logInForm hr {
+	border: 1px dotted #cccccc;
+	width: 285px;	
+	margin: 3px 0 3px 5px;
+}
+#logInForm #logWithGoogle {
+	font-weight: bold;
+	margin: 0 0 0 60px;
+	font-size: 10pt;
+}
+
+
+#whatsNew {
+	width: 280px;
+	height: 350px;
+	padding: 10px 10px 10px 10px;
+	background-color: #ffffdb;
+	border: 1px solid #f6e4b8;
+	border-radius: 10px;
+	position: relative;
+	bottom: 1425px;
+	left: 598px;
+}
+#whatsNew h4 {
+	color: #cc6600;
+	font-size: 14pt;
+	margin: 0;
+	margin-bottom: 7px;
+}
+#whatsNew a,
+#whatsNew p {
+	font-size: 11pt;
+	line-height: 17px;
+}
+#whatsNew a {
+	font-weight: bold;
+	position: relative;
+	bottom: 25px;
+	left: 3px;
+}
+#whatsNew p {
+	position: relative;
+	width: 240px;
+	left: 37px;
+	bottom: 42px;
+}
+#whatsNew #first {
+	height: 60px;
+}
+#whatsNew #second {
+	height: 60px;
+}
+#whatsNew #third {
+	height: 70px;
+}
+#whatsNew #blog #trend {
+	position: relative;
+	top: -3px;
+	left: 0px;
+	color: #cc6600;
+	
+}
+#whatsNew #blog p {
+	width: 290px;
+	position: relative;
+	left: 0px;
+	top: -15px;
+}
+#whatsNew #blog #readMore{
+	margin-left: 140px;
+	color: #cc6600;
+	font-weight: normal;
+}

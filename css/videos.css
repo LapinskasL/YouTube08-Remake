@@ -1,0 +1,266 @@
+main {
+	height: 1180px;
+	overflow: hidden;
+}
+
+#videoBar {
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 24px;
+}
+#videoBar ul a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 9pt;
+	border-right: 1px solid #cccccc;
+	padding: 0 11px 0 7px;
+}
+#videoBar ul {
+	margin: 0 0 0 70px;
+}
+#videoBar li {
+	list-style-type: none;
+	display: inline-block;
+}
+#videoBar ul li:last-of-type a {
+	border-right: 0;
+}
+
+
+
+#categories ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 11pt;
+}
+#categories ul li a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+#spotLight {
+	width: 538px;
+	height: 85px;
+	padding-bottom: 12px;
+	margin-top: 12px;
+	position: relative;
+	left: 180px;
+	bottom: 272px;
+	display: inline-block;
+}
+#spotLight .spotVidDescr {
+	float: left;
+	width: 245px;
+	margin: 0 5px 0 5px ;
+	height: 60px;
+}
+#spotLight h3 a {
+	text-decoration: none;
+}
+#spotLight h3{
+	font-size: 14pt;
+	margin: 0;
+	margin-top: 1px;
+	position: relative;
+	bottom: 65px;
+	right: 170px;
+}
+#spotLight h3 img {
+	position: relative;
+	top: 3px;
+}
+#spotLight .spotVidDescr p{
+	float: left;
+	font-size: 11pt;
+	margin: 5px 0 0 0;
+	position: relative;
+	bottom: 68px;
+	color: #595959;
+}
+#spotLight #svideoThumb {
+	padding: 1px;
+	border: 1px solid #a8a8a8;
+	width: 162px;
+	height: 102px;
+	float: left;
+	position: relative;
+	bottom: 18px;
+}
+#spotLight .quickListAddGray {
+	position: relative;
+	top: 70px;
+	right: 181px;
+}
+#spotLight .quickListAddGreen {
+	position: relative;
+	top: 70px;
+	right: 162px;
+}
+#spotLight .quickListAddGray:hover {
+	opacity: 0;
+	transition: .1s;
+}
+#spotLight .inQuickList {
+	position: relative;
+	width: 97px;
+	right: 182px;
+	top: 66px;
+	height: 20px;
+	background-color: rgba(65, 168, 13, 0.6);
+}
+#spotLight .inQuickList a {
+	color: black;
+	font-size: 11pt;
+	padding-left: 14px;
+	font-weight: bold;
+}
+#spotLight .spotVidMisc {
+	width: 117px;
+	font-size: 10pt;
+	border-left: 1px solid #a8a8a8;
+	display: inline-block;
+	position: relative;
+	bottom: 120px;
+	left: 250px;
+	padding-left: 5px;
+}
+#spotLight .spotVidMisc #length {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+#timeSelect {
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 24px;
+	width: 538px;
+	position: relative;
+	bottom: 360px;
+	left: 180px;
+}
+#timeSelect ul a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 9pt;
+	border-right: 1px solid #cccccc;
+	padding: 0 13px 0 9px;
+}
+#timeSelect ul {
+	margin: 0 0 0 100px;
+}
+#timeSelect li {
+	list-style-type: none;
+	display: inline-block;
+}
+#timeSelect ul li:last-of-type a {
+	border-right: 0;
+}
+
+
+
+
+
+
+
+
+.videoListBlock {
+	width: 555px;
+	position: relative;
+	bottom: 350px;
+	left: 180px;
+}
+.videoListBlock .video {
+	width: 124px;
+	height: 175px;
+	display: table;
+	float: left;
+	margin-right: 14px;
+	display: inline-block;
+}
+.videoListBlock .video .videoThumb {
+	padding: 1px;
+	border: 1px solid #a8a8a8;
+	width: 120px;
+	height: 72px;
+}
+.videoListBlock .video .quickListAddGray {
+	position: relative;
+	bottom: 22px;
+	right: 16px;
+	margin: 1px;
+}
+.videoListBlock .video .quickListAddGreen {
+	position: relative;
+	bottom: 22px;
+	left: 4px;
+}
+.videoListBlock .video .quickListAddGray:hover {
+	opacity: 0;
+	transition: .1s;
+}
+.videoListBlock .video .inQuickList {
+	position: relative;
+	width: 97px;
+	right: 6px;
+	bottom: 32px;
+	height: 20px;
+	background-color: rgba(65, 168, 13, 0.6);
+}
+.videoListBlock .video .inQuickList a {
+	color: black;
+	font-size: 11pt;
+	padding-left: 14px;
+	font-weight: bold;
+}
+.videoListBlock .video .vidTitle {
+	margin-top: 2px;
+	position: relative;
+	bottom: 20px;
+	height: 47px;
+}
+.videoListBlock .video .vidTitle h3{
+	font-size: 10.5pt;
+	margin-top: 1px;
+	width: 124px;
+}
+.videoListBlock .video .vidMisc {
+	width: 124px;
+	font-size: 10pt;
+	display: inline-block;
+	position: relative;
+	bottom: 30px;
+	line-height: 14px;
+}
+.videoListBlock .video .vidMisc .from a {
+	color: black;
+}
+.videoListBlock .video .vidMisc .length{
+	float: left;
+	margin-right: 37px;
+	font-weight: bold;
+}
+
+
+#pageNav {
+	margin-left: auto;
+	margin-right: auto;
+	width: 538px;
+	font-weight: bold;
+	word-spacing: 8px;
+	border-top: 1px #cccccc solid;
+	border-bottom: 1px #cccccc solid;
+	padding: 3px 0 3px 0;
+	font-size: 14pt;
+	text-align: center;
+	position: relative;
+	bottom: 350px;
+}

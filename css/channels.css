@@ -1,0 +1,118 @@
+#mostVid {
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	height: 24px;
+}
+#mostVid ul a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 9pt;
+	border-right: 1px solid #cccccc;
+	padding: 0 11px 0 7px;
+}
+#mostVid ul {
+	margin: 0 0 0 315px;
+}
+#mostVid li {
+	list-style-type: none;
+	display: inline-block;
+}
+#mostVid ul li:last-of-type a {
+	border-right: 0;
+}
+
+
+
+#categories {
+	float: left;
+}
+#categories ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 11pt;
+}
+#categories ul li a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+#time {
+	border-bottom: 1px solid #cccccc;
+	height: 24px;
+	width:555px;
+	position: relative;
+	left: 180px;
+}
+#time ul a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 9pt;
+	border-right: 1px solid #cccccc;
+	padding: 0 11px 0 7px;
+}
+#time ul {
+	margin: 0 0 0 115px;
+}
+#time li {
+	list-style-type: none;
+	display: inline-block;
+}
+#time ul li:last-of-type a {
+	border-right: 0;
+}
+
+
+
+
+#channelBlock {
+	width: 555px;
+	height: 775px;
+	margin-left: 180px;
+	margin-bottom: 10px;
+}
+#channelBlock .channel {
+	height: 145px;
+    width: 138px;
+	margin-top: 10px;
+	float: left;
+}
+#channelBlock .channel .chImage {
+	height: 68px;
+    width: 68px;
+    overflow: hidden;
+	border: 3px double gray; 
+	display: flex;
+}
+#channelBlock .channel .chImage img {
+	max-width: 130%;
+	max-height: 130%;
+	position: relative;
+	right: 14%;
+}
+#channelBlock .channel .chData {
+	font-size: 10pt;
+}
+#channelBlock .channel .chData span {
+	color: gray;
+}
+
+
+
+
+#pageNav {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	width: 538px;
+	font-weight: bold;
+	word-spacing: 8px;
+	border-top: 1px #cccccc solid;
+	border-bottom: 1px #cccccc solid;
+	padding: 3px 0 3px 0;
+	font-size: 14pt;
+	text-align: center;
+}

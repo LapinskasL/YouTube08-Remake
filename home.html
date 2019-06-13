@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home - Youtube</title>
+	<link rel="icon" href="misc_images/favicon.png">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/home.css" rel="stylesheet">
+	<script src="javascript/generationFunctions.js" type="text/javascript"></script>
+	<script src="javascript/randGenHome.js" type="text/javascript"></script>
+	<script src="javascript/htmlGenFunctions.js" type="text/javascript"></script>
+<style>
+#navigationButtons li:nth-of-type(1) a { 
+	color: #333333;
+	background: linear-gradient(#fcfcfc, #d5d5d5);
+	border-top: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+}
+
+#videosWatchedNow img {
+	padding: 1px;
+	border: 1px solid #a8a8a8;
+	width: 98px;
+	height: 64px;
+}
+
+.stars {
+	color: red;
+}
+.length {
+	font-weight: bold;
+}
+
+.inQuickList{
+	display: none;
+}
+</style>
+<script>
+
+var quickListCnt = 0;
+function addQuickList(className) {
+	var elem = document.getElementById("quickListNum");
+	quickListCnt++;
+	elem.innerHTML = quickListCnt;
+
+	// hides the quicklist buttons
+	document.getElementsByClassName(className)[0].style.display = "none";
+	document.getElementsByClassName(className)[1].style.opacity = "0";
+	document.getElementsByClassName(className)[1].style.right = "90000px";
+	document.getElementsByClassName(className)[2].style.display = "inline-block";
+	document.getElementsByClassName(className)[3].style.marginTop = "0";
+}
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1>
+		<a href="home.html">
+			<img src="logos/yt_logo.png" width="130" height="65" alt="Youtube Logo">
+		</a>
+	</h1>
+	<div id="topNavigation">
+		<ul>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">QuickList</a> (<span id="quickListNum">0</span>)</li>
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Log In</a></li>
+			<li><a href="#">Site:</a></li>
+		</ul>
+	</div>
+</header>
+<nav>
+	<div id="navigationButtons">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="channels.html">Channels</a></li>
+			<li><a href="#">Community</a></li>
+		</ul>
+	</div>
+	<div class="clearLeft"></div>
+	<div id="searchBar">
+		<form>
+			<input type="text" name="searchField" size="25">
+			<select name="searchType">
+				<option value="videos">Videos</option>
+				<option value="channels">Channels</option>
+			</select>
+			<input type="submit" value="Search" name="searchButton">
+			<a href="#.html" style="font-size:9pt; text-decoration-style: dotted;">advanced</a>
+		</form>
+		<div id="uploadButton">
+			<a href="#.html">Upload</a>
+		</div>
+		<div class="clearLeft"></div>
+	</div>
+</nav>
+<main>
+	<div id="videosWatchedNow">
+		<h4>Videos being watched right now</h4>
+		<div class="videoThumb"><a href="#"><img class="topVidThumb" src="video_thumbnails/thmb1.jpg"></a></div>
+		<div class="videoThumb"><a href="#"><img class="topVidThumb" src="video_thumbnails/thmb2.jpg"></a></div>
+		<div class="videoThumb"><a href="#"><img class="topVidThumb" src="video_thumbnails/thmb3.jpg"></a></div>
+		<div class="videoThumb"><a href="#"><img class="topVidThumb" src="video_thumbnails/thmb4.jpg"></a></div>
+		<div class="videoThumb"><a href="#"><img class="topVidThumb" src="video_thumbnails/thmb5.jpg"></a></div>
+		
+		<div class="clearLeft"></div>
+	</div>
+	<div id="featuredVids">
+		<h2>Featured Videos</h2>
+		<div id="featuredVidsBar">
+			<ul>
+				<li><a href="#">Featured</a></li>
+				<li><a href="#">Most Viewed</a></li>
+				<li><a href="#">Most Discussed</a></li>
+				<li><a href="#">Top Favorites</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="featuredVidList">
+	<!-- video blocks are generated in here -->
+	<!-- video blocks are generated in here -->
+	<!-- video blocks are generated in here -->
+	</div>
+	
+	<div id="logInForm">
+		<h4 style="font-size:13pt;">Login</h4>
+		<div id="signHelp">
+			<a href="#">Sign Up</a> | <a href="#">Help</a>
+		</div>
+		<div class="clearLeft"></div>
+		<form>
+			<span id="user">Username:</span> <input type="text" name="userName" size="13" height="20px"></br>
+			<span id="pass">Password:</span> <input type="password" name="password" size="13"></br>
+			<input type="button" value="Login">
+		</form>
+		<div id="forgotUserPass">
+			<a href="#">Forgot Username</a> | <a href="#">Forgot Password</a></br>
+		</div>
+		<hr>
+		<a href="#" id="logWithGoogle">Login with your Google account</a>
+	</div>
+	<div class="clearLeft"></div>
+	
+	<div id="whatsNew">
+		<h4>What's New</h4>
+		<div id="first">
+			<img src="misc_images/addybook.gif" width="30" height="37">
+			<a href="#">New Address Book</a>
+			<p>Organizing your YouTube friends and contacts just got a lot simpler</p>
+		</div>
+		<div id="second">
+			<img src="misc_images/inbox.gif" width="30" height="37">
+			<a href="#">Updated Inbox</a>
+			<p>Manage your messages and invites with ease</p>
+		</div>
+		<div id="third">
+			<img src="misc_images/pic_home_mobile.gif" width="30" height="37">
+			<a href="#">YouTube Mobile</a>
+			<p>Watch and upload YouTube videos on your mobile device.</p>
+		</div>
+		<div id="blog">
+			<a id="trend" href="#">Trendspotting Tuesday; Helmet Cam POV</a>
+			<p>
+				Over the past couple years, more internally-powered, easily-mounted micro video cameras have come on the market for consumers, and the result has been a ton more first-person point-of-view sports...
+			</p>
+			<a id="readMore" href="#">Read more in our Blog</a>
+		</div>
+	</div>
+</main>
+<footer>
+<div id="bottomSearchBar">
+		<form>
+			<input type="text" name="searchField" size="25">
+			<select name="searchType">
+				<option value="videos">Videos</option>
+				<option value="channels">Channels</option>
+			</select>
+			<input type="submit" value="Search" name="searchButton">
+		</form>
+	</div>
+	<h6>&copy; 2008 YouTube, LLC</h6>
+</footer>
+</div>
+</body>
+</html>
